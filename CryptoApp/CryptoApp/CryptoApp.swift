@@ -27,7 +27,7 @@ struct CryptoApp: View {
                 
             }.navigationTitle("CryptoMarketCap")
         }.task {
-            await cryptoListVM.downloadCryptosAsync(url: blablabla)
+            await cryptoListVM.downloadCryptosAsync(url: URL(string: "https://raw.githubusercontent.com/jeunerturk/networking-apps/main/crypto.json")!)
         }
         
         /* .onAppear {
